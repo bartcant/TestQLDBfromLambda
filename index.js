@@ -9,8 +9,6 @@ import {
     DescribeLedgerResponse
 } from "aws-sdk/clients/qldb";
 
-const qldbDriver: PooledQldbDriver = new PooledQldbDriver("testLedger", testServiceConfigOptions));
-const qldbSession: QldbSession = await qldbDriver.getSession();
 import { LEDGER_NAME } from "./qldb/Constants";
 import { error, log } from "./qldb/LogUtil";
 import { sleep } from "./qldb/Util";
